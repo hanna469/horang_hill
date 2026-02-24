@@ -147,48 +147,70 @@
     font-size: 0.88rem;
 }
 #wrap main #hero_bnr #reservation_form > p #search_btn:hover {background-color: #ff9900;}
-/* --------------------------------------------------------------------- */
-#wrap main .intro_horang,
-#wrap main .tour_list {padding: 70px 0;}
-#wrap main .intro_horang > *,
-#wrap main .tour_list > * {
-    width:1220px;
-    margin: 0 auto 30px;
-
+/* --------------------------------------------------------- 2. 양림동 호랑가시나무 소개 */
+#wrap main #intro_guest_bg {
+    padding: 70px 0;
+    background-color: #f5f5f5;
 }
-#wrap main .intro_horang h1,
-#wrap main .tour_list h1 {
-    font-size: 1.5rem;
-    font-weight: 600;
+#wrap main #intro_guest_bg #intro_guest {}
+#wrap main #intro_guest_bg #intro_guest h1 {}
+#wrap main #intro_guest_bg #intro_guest p {} /* 공통 */
+#wrap main #intro_guest_bg #intro_guest h1+p {} /* h1 옆 p */
+#wrap main #intro_guest_bg #intro_guest p:last-child {}
+#wrap main #intro_guest_bg #intro_guest p:last-child img {width:100%;}
+/* --------------------------------------------------------- 3. 관광지 소개 */
+#wrap main #intro_tourist {}
+#wrap main #intro_tourist h1 {}
+#wrap main #intro_tourist p {}
+#wrap main #intro_tourist .contents {
+    display: flex; flex-flow:row nowrap;
+    justify-content: space-between;
+    margin-bottom: 80px;
 }
-#wrap main .intro_horang > p,
-#wrap main .tour_list > p {
-    font-size: 0.94rem; font-weight: 500;
-    line-height: 1.7; letter-spacing:0;
-    color: #555;
+#wrap main #intro_tourist .contents li {
+    width:calc((100% - (20px * 3)) / 4);
 }
-#wrap main .intro_horang {background-color: #f5f5f5;}
-#wrap main .intro_horang h1 {}
-#wrap main .intro_horang > p {}
-#wrap main .intro_horang > p:last-child {margin-bottom: 0;}
-#wrap main .intro_horang p img {}
-#wrap main .tour_list {background-color: #fff;}
-#wrap main .tour_list h1 {}
-#wrap main .tour_list > p {}
-#wrap main .tour_list ul {
-    background-color: violet;
-    display: flex;
-    /* flex-flow: row nowrap; */
-    /* justify-content: space-between; */
+#wrap main #intro_tourist .contents li a {margin-bottom: 10px; display: block; overflow: hidden; height:250px;}
+#wrap main #intro_tourist .contents li a img {width:100%;}
+#wrap main #intro_tourist .contents li a:hover img {width:120%;}
+/* #wrap main #intro_tourist .contents li a:hover img {transform: scale(1.5);} */
+#wrap main #intro_tourist .contents li h2 {font-size: 1.13rem; font-weight: 500;}
+#wrap main #intro_tourist .more {
+    font-size: 0.94rem;
+    display: block; width:max-content; margin: 0 auto;
+    border-bottom: 1px solid #000;
+    /* text-decoration: underline; 밑줄과 글자사이 여백 불가능 */
 }
-#wrap main .tour_list ul li {
-    background-color: yellowgreen;
-    width: calc((100% - (20px * 3)) / 4);
-    margin-right: 20px;
+/* ----------------------------------------------------- 4. 객실 및 예약안내 */
+#wrap main #room_info_bg {
+    padding: 70px 0;
+    background-color: #f5f5f5;
 }
-#wrap main .tour_list ul li:last-child {margin-right: 0;}
-#wrap main .tour_list ul li a {display: block; height: 250px; position: relative; overflow: hidden; margin-bottom: 10px;}
-#wrap main .tour_list ul li a:hover img {position: absolute; width:120%;}
-#wrap main .tour_list ul li a img {width: 100%;}
-#wrap main .tour_list ul li p {font-size: 1.13rem; font-weight: 500;}
-#wrap main .tour_list > a {display: block; font-size: 0.94rem; text-decoration: underline 1px solid #000; text-align: center;}
+#wrap main #room_info_bg #room_info {}
+#wrap main #room_info_bg #room_info h1 {}
+#wrap main #room_info_bg #room_info p {}
+#wrap main #room_info_bg #room_info .room_list {
+    display: flex; flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 80px;
+}
+#wrap main #room_info_bg #room_info .room_list li {}
+#wrap main #room_info_bg #room_info .room_list li a {
+    margin-bottom: 10px;
+    display: block;
+}
+#wrap main #room_info_bg #room_info .room_list li .active {}
+#wrap main #room_info_bg #room_info .room_list li a img {}
+#wrap main #room_info_bg #room_info .room_list li h2 {
+    font-size: 1.13rem; font-weight: 500;
+    margin-bottom: 10px;
+}
+#wrap main #room_info_bg #room_info .room_list li p {
+    font-size:0.88rem; color:#555; line-height: 1.7;
+}
+#wrap main #room_info_bg #room_info .reservation {
+    font-size: 0.88rem;
+    border-bottom:1px solid #000;
+    display: block; margin: 0 auto; width:max-content;
+}
