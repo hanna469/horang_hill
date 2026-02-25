@@ -214,3 +214,20 @@
     border-bottom:1px solid #000;
     display: block; margin: 0 auto; width:max-content;
 }
+#wrap main #guest_location {}
+#wrap main #guest_location h1 {}
+#wrap main #guest_location h1+p {}
+#wrap main #guest_location > p:last-child {}
+#wrap main #guest_location .map_bus {}
+#wrap main #guest_location .map_bus h2 {}
+#wrap main #guest_location .map_bus p {}
+#wrap main #guest_location .map_subway {}
+#wrap main #guest_location .map_subway h2 {}
+#wrap main #guest_location .map_subway p {}
+#wrap main #guest_location .map_bus h2,
+#wrap main #guest_location .map_subway h2 {
+    color:#555; font-size: 1.5rem; font-weight: 700;
+    line-height: 1.8;
+}
+#wrap main #guest_location .map_bus p,
+#wrap main #guest_location .map_subway p {}
