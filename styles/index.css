@@ -124,17 +124,16 @@
     flex-flow: row nowrap;
     align-items: center; justify-content: space-between; }
 #wrap main #hero_bnr #reservation_form .person .number li .number_btn {
-    background-color: yellowgreen;
     display: inline-block;
     padding: 11px 14px;
 }
-#wrap main #hero_bnr #reservation_form .person .number li .number_btn:hover img {transform: scale(1.5);}
+#wrap main #hero_bnr #reservation_form .person .number li .number_btn:hover img {transform: scale(1.3);}
 #wrap main #hero_bnr #reservation_form .person .number li .number_btn img {width: 12px; transition:0.3s ease;}
 #wrap main #hero_bnr #reservation_form .person .number li #adult_add {}
 #wrap main #hero_bnr #reservation_form .person .number li #adult_remove {}
 #wrap main #hero_bnr #reservation_form .person .number li span {}
 #wrap main #hero_bnr #reservation_form .person .number li span label {}
-#wrap main #hero_bnr #reservation_form .person .number li span input {width:30px; text-align: center; background-color: yellowgreen;}
+#wrap main #hero_bnr #reservation_form .person .number li span input {width:30px; text-align: center;}
 #wrap main #hero_bnr #reservation_form .person .number li span #adult {}
 #wrap main #hero_bnr #reservation_form .person .number li span #kids {}
 #wrap main #hero_bnr #reservation_form .person .number li #kids_add {}
@@ -214,13 +213,17 @@
     border-bottom:1px solid #000;
     display: block; margin: 0 auto; width:max-content;
 }
-#wrap main #guest_location {}
-#wrap main #guest_location h1 {}
-#wrap main #guest_location h1+p {}
-#wrap main #guest_location > p:last-child {}
+#wrap main #guest_location {width:1220px; margin:0 auto; padding:70px 0;}
+#wrap main #guest_location .location_title {
+    display: flex; flex-flow: row nowrap;
+    justify-content: space-between;
+}
+#wrap main #guest_location .location_title h1 {font-size: 1.5rem; font-weight: 600; margin: 0 0 30px;}
+#wrap main #guest_location .location_title p {}
+#wrap main #guest_location > p {}
 #wrap main #guest_location .map_bus {}
 #wrap main #guest_location .map_bus h2 {}
-#wrap main #guest_location .map_bus p {}
+#wrap main #guest_location .map_bus p {margin-bottom: 41px;}
 #wrap main #guest_location .map_subway {}
 #wrap main #guest_location .map_subway h2 {}
 #wrap main #guest_location .map_subway p {}
@@ -230,4 +233,8 @@
     line-height: 1.8;
 }
 #wrap main #guest_location .map_bus p,
-#wrap main #guest_location .map_subway p {}
+#wrap main #guest_location .map_subway p {
+    color:#555; font-size: 0.94rem; line-height: 1.8;
+}
+#wrap footer {background-color: #000;}
+#wrap footer address {font-size: 0.81rem; color:#fff; line-height: 2.0;}
